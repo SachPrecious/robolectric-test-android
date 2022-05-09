@@ -8,6 +8,7 @@ import org.junit.Assert
 import org.junit.Before
 import org.junit.Test
 import org.junit.runner.RunWith
+import org.robolectric.RobolectricTestRunner
 
 @RunWith(RobolectricTestRunner::class)
 class FirstFragmentTest : TestCase(){
@@ -19,7 +20,7 @@ class FirstFragmentTest : TestCase(){
 
     @Before
     @Throws(Exception::class)
-    fun setUp(){
+    override fun setUp(){
         fragment = FirstFragment()
         activity = Robolectric.buildActivity(
             MainActivity::class.java
@@ -46,4 +47,6 @@ class FirstFragmentTest : TestCase(){
 
 
 }
+
+
 
