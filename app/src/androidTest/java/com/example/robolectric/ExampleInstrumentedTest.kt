@@ -3,8 +3,16 @@ package com.example.robolectric
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
 
+import com.example.android.robolectric.FirstFragment
+import com.kln.android.robolectrictesting.MainActivity
+import com.kln.android.robolectrictesting.R
+
 import org.junit.Test
 import org.junit.runner.RunWith
+
+import org.robolectric.Robolectric
+import org.robolectric.RobolectricTestRunner
+
 
 import org.junit.Assert.*
 
