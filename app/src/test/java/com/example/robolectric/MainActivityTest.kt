@@ -16,7 +16,7 @@ class MainActivityTest : TestCase(){
 
     @Before
     @Throws(Exception::class)
-    fun setUp() {
+    override fun setUp() {
         activity = Robolectric.buildActivity(MainActivity::class.java)
             .create()
             .resume()
